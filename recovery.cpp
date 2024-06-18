@@ -890,12 +890,7 @@ Device::BuiltinAction start_recovery(Device* device, const std::vector<std::stri
   std::string ver = android::base::GetProperty("ro.modversion", "");
 
   std::vector<std::string> title_lines = {
-<<<<<<< HEAD
-    "Version " + android::base::GetProperty("ro.blackiron.build.version", "(unknown)") +
-        " (" + ver_date + ")",
-=======
     "Version " + android::base::GetProperty("ro.blackiron.build.version", "(unknown)"),
->>>>>>> bc603e4d (recovery: Drop useless version date)
   };
   title_lines.push_back("Product name - " + android::base::GetProperty("ro.product.device", ""));
   if (android::base::GetBoolProperty("ro.build.ab_update", false)) {
